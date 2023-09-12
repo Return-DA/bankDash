@@ -1,0 +1,259 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+h2 {
+    font-family: 'ADLaM Display', cursive;
+    color: white;
+}
+h3 {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+#pro {
+    color: black;
+    margin-left: 0.5%;
+}
+.dash {
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "navbar"
+    "main";
+}
+
+.navbar {
+    grid-area: navbar;
+}
+.main {
+    background-color: #333;
+    grid-area: main;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+}
+
+.user-name {
+font-size: 14px;
+font-weight: bold;
+position: relative;
+top: -7.5px;
+margin-left: 3px;
+opacity: 0.9;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1100px 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 30px;
+    grid-template-areas: 
+    "c1 c1 c1 c2"
+    "c3 c3 c3 c4"
+    "c3 c3 c3 c5"
+    "c3 c3 c3 c6"
+}
+
+.card1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-areas: 
+    "ce1 ce1"
+    "ce2 ce3"
+    "ce4 ce4";
+    gap: 10px;
+    padding: 15px;
+}
+.card1Ele {
+    background-color: #6f9cbc;
+    border-radius: 15px;
+}
+
+.card1Ele3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.card1Ele .card {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    padding: 15px;
+    height: fit-content;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card1Ele .card:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    font-family: 'ADLaM Display', cursive;
+    font-weight: bold;
+}
+.card {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card1Ele:nth-child(1) {
+    grid-area: ce1 ;
+}
+.card1Ele:nth-child(2) {
+    grid-area: ce2 ;
+}
+.card1Ele:nth-child(3) {
+    grid-area: ce3 ;
+}
+.card1Ele:nth-child(4) {
+    grid-area: ce4 ;
+}
+
+.card:nth-child(1) {
+    grid-area: c1 ;
+}
+.card:nth-child(2) {
+    grid-area: c2 ;
+}
+.card:nth-child(3) {
+    grid-area: c3 ;
+}
+.card:nth-child(4) {
+    grid-area: c4 ;
+}
+.card:nth-child(5) {
+    grid-area: c5 ;
+}
+.card:nth-child(6) {
+    grid-area: c6 ;
+}
+
+.agence div {
+    font-family: 'ADLaM Display', cursive;
+    font-size: 1rem;
+    margin: 10px;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+th, td {
+padding: 12px 15px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+tr:hover {
+background-color: #f5f5f5;
+}
+
+.cardIcon img {
+    position: relative;
+    top: 4px;
+    left: -3px;
+}
+
+.cardInfos .data {
+    font-family: 'ADLaM Display', cursive;
+    font-size: 1.5rem;
+}
+
+span {
+    font-family: 'ADLaM Display', cursive;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.cardChart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a3"
+    "a4 a5";
+    gap: 20px;
+    padding: 20px;
+}
+
+.chart:nth-child(1) {
+    grid-area: a1;
+}
+.chart:nth-child(2) {
+    grid-area: a2;
+}
+.chart:nth-child(3) {
+    grid-area: a3;
+}
+.chart:nth-child(4) {
+    grid-area: a4;
+}
+.chart:nth-child(5) {
+    grid-area: a5;
+}
+.chartItem {
+    padding: 10px;
+}
+
+.chart {
+    background-color: white;
+    border-radius: 4%;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(45, 45, 45, 0.3);
+}
+
+.chart:hover {
+    transform: scale(1.01);
+}
+
+#PA {
+    background-color: white;
+    border-radius: initial;
+    transition: initial;
+    cursor: initial;
+    box-shadow: initial;
+}
+
+#PA:hover {
+    transform: initial;
+}
